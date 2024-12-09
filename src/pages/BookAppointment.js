@@ -23,7 +23,7 @@ function BookAppointment() {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "/api/doctor/get-doctor-info-by-id",
+        "https://doctor-appointment-app-5mpl.onrender.com/api/doctor/get-doctor-info-by-id",
         {
           doctorId: params.doctorId,
         },

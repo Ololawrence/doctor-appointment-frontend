@@ -19,7 +19,7 @@ function Profile() {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "/api/doctor/update-doctor-profile",
+        "https://doctor-appointment-app-5mpl.onrender.com/api/doctor/update-doctor-profile",
         {
           ...values,
           userId: user._id,
